@@ -36,8 +36,8 @@ public class Main {
         System.out.println("\nEnter your choice:\t");
         Scanner sc = new Scanner(System.in);
         int  options =  sc.nextInt();
-        for(int j=1;j<=slen;j++){
-            if(options==j){
+//        for(int j=1;j<=slen;j++){
+//            if(options==j){
                 switch (options){
                     case 1:
                         System.out.println("Your saved expenses are listed below: \n");
@@ -81,8 +81,8 @@ public class Main {
                         System.out.println("You have made an invalid choice!");
                         break;
                 }
-            }
-        }
+//            }
+//        }
 
     }
     private static void closeApp() {
