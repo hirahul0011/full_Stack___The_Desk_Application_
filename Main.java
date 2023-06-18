@@ -19,7 +19,7 @@ public class Main {
                 "5. I wish to search for a particular expenditure",
                 "6. Close the application"
         };
-//        int[] arr1 = {1,2,3,4,5,6};
+
         int  slen = arr.length;
         for(int i=0; i<slen;i++){
             System.out.println(arr[i]);
@@ -36,8 +36,7 @@ public class Main {
         System.out.println("\nEnter your choice:\t");
         Scanner sc = new Scanner(System.in);
         int  options =  sc.nextInt();
-//        for(int j=1;j<=slen;j++){
-//            if(options==j){
+
                 switch (options){
                     case 1:
                         System.out.println("Your saved expenses are listed below: \n");
@@ -81,8 +80,6 @@ public class Main {
                         System.out.println("You have made an invalid choice!");
                         break;
                 }
-//            }
-//        }
 
     }
     private static void closeApp() {
