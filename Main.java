@@ -19,8 +19,8 @@ public class Main {
                 "5. I wish to search for a particular expenditure",
                 "6. Close the application"
         };
-        int[] arr1 = {1,2,3,4,5,6};
-        int  slen = arr1.length;
+//        int[] arr1 = {1,2,3,4,5,6};
+        int  slen = arr.length;
         for(int i=0; i<slen;i++){
             System.out.println(arr[i]);
             // display the all the Strings mentioned in the String array
