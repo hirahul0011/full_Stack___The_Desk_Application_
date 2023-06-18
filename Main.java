@@ -66,11 +66,11 @@ public class Main {
                         }
                         optionsSelection();
                         break;
-                    case 4:
+                    case 4:                    	
                         sortExpenses(expenses);
                         optionsSelection();
                         break;
-                    case 5:
+                    case 5:                    	                    	                    	
                         searchExpenses(expenses);
                         optionsSelection();
                         break;
@@ -90,7 +90,21 @@ public class Main {
             }
     private static void searchExpenses(ArrayList<Integer> arrayList) {
         int leng = arrayList.size();
+        int sequence=-1;
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the expense you need to search:\t");
+        int searchExp = sc.nextInt();
+        for(int i=0;i<leng;i++) {
+        	if(searchExp==arrayList.get(i)) {
+        		sequence=i+1;
+        		break;
+        	}
+        }
+        if(sequence!=-1) {
+        	System.out.println("This expense happened at "+sequence+" st/rd/th position in the sequence.");
+        }else {
+        	System.out.println("OOps! You have not made any expense of amount "+searchExp);
+        }
         //Complete the method
     }
     private static void sortExpenses(ArrayList<Integer> arrayList) {
