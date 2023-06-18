@@ -109,6 +109,19 @@ public class Main {
     }
     private static void sortExpenses(ArrayList<Integer> arrayList) {
         int arrlength =  arrayList.size();
+        int temp;
+        for(int i=0;i<arrlength;i++) {
+        	for(int j=i+1;j<arrlength;j++) {
+        		if(arrayList.get(i)>arrayList.get(j)) {
+        			temp=arrayList.get(i);
+        			arrayList.set(i, arrayList.get(j));
+        			arrayList.set(j, temp);        			
+        		}
+        	}        	
+        }
+        System.out.println("New sorted expenses will looks like:");
+        System.out.println(arrayList+"\n");
+        
        //Complete the method. The expenses should be sorted in ascending order.
     }
 }
